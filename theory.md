@@ -5,7 +5,7 @@ Exercise 1 - Theory questions
  > Concurrency means working on different tasks in the same timespan, i.e. starting on a task before another one is finished, and switching between them.
  This allows us to make progress in different tasks in the same time peried. However, only one task may be processed at one exact time.
  
- Parallelism means working on different tasks simultaneously, i.e. at the same exact time. For instance can an application split a single task into subtask that separate
+ > Parallelism means working on different tasks simultaneously, i.e. at the same exact time. For instance can an application split a single task into subtask that separate
  cores can execute in parallell
  
  ### Why have machines become increasingly multicore in the past decade?
