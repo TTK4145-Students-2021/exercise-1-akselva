@@ -2,10 +2,14 @@ Exercise 1 - Theory questions
 -----------------------------
  
  ### What is the difference between concurrency and parallelism?
- > *Your answer here*
+ > Concurrency means working on different tasks in the same timespan, i.e. starting on a task before another one is finished, and switching between them.
+ This allows us to make progress in different tasks in the same time peried. However, only one task may be processed at one exact time.
+ 
+ Parallelism means working on different tasks simultaneously, i.e. at the same exact time. For instance can an application split a single task into subtask that separate
+ cores can execute in parallell
  
  ### Why have machines become increasingly multicore in the past decade?
- > *Your answer here*
+ > 
  
  ### Why do we divide software (programs) into concurrently executing parts (like threads or processes)?
  (Or phrased differently: What problems do concurrency help in solving?)
