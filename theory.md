@@ -18,19 +18,20 @@ Exercise 1 - Theory questions
  
  ### Does creating concurrent programs make the programmer's life easier? Harder? Maybe both?
  (Come back to this after you have worked on part 4 of this exercise)
- > *Your answer here*
+ > Concurrency increases efficiency, but it also increases the complexity of a program beacause it has to be written in such a way as to maintain data integrity, i.e. making sure that multiple threads are not trying to read from an write to the same memory block at the same time.
  
  ### What is the conceptual difference between threads and processes?
- > *Your answer here*
+ > Processes cannot share memory with other processes, while threads can. A single process typically contains many threads.
  
  ### Some languages support "fibers" (sometimes called "green threads") or "coroutines"? What are they?
- > *Your answer here*
+ > Fibers are threads that use "cooperative scheduling" instead of "pre-emptive scheduling". This means that instead of having a scheduler decide which threads to run at
+ specific times, the fibers "take" and "yield" control over resources themselves, essentially cooperating between eachother to produce a functional scheduling system.
  
  ### What is the Go-language's "goroutine"? A C/POSIX "pthread"?
- > *Your answer here*
+ > Goroutines are GO-functions -and methods that can run concurrently with eachother, i.e. very lightweight threads. 
  
  ### In Go, what does `func GOMAXPROCS(n int) int` change? 
- > *Your answer here*
+ > GOMAXPROCS sets a limit to the number of OS threads that can execute simultaneously.
 
 
 
